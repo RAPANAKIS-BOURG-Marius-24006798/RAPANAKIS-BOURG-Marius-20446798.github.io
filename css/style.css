@@ -17,12 +17,15 @@ html {
   font-size: 1em;
   line-height: 1.4;
   scroll-behavior: smooth;
+
 }
 
 body{
   width: 100%;
   margin: 0;
   padding: 0;
+  overscroll-behavior-y: none;
+
 }
 
 @font-face {
@@ -276,10 +279,11 @@ textarea {
 }
 
 h1{
+  margin: 0;
   font-family: aurora, cursive;
   color: #FBFBFB;
   text-align:center;
-  font-size:5.5rem;
+  font-size:5.7rem;
 }
 
 .button-up {
@@ -309,8 +313,8 @@ h1{
 
 hr {
   background-color:#FBFBFB;
-  margin: 20px;
-  margin-top: -60px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .work-div {
@@ -325,6 +329,14 @@ h2 {
   color: #FBFBFB;
   font-size: 4rem;
   margin: 0;
+  padding: 50px;
+}
+
+h3 {
+  font-family: aurora, cursive;
+  color: #FBFBFB;
+  font-size: 2rem;
+  margin: 10px;
 }
 
 p {
@@ -335,10 +347,6 @@ p {
 
 .special-text{
   color:#A93F55;
-}
-
-.special-text:hover{
-  color: hotpink;
   transition: 300ms all linear;
   -webkit-transition: 300ms all linear;
   -moz-transition: 300ms all linear;
@@ -346,15 +354,19 @@ p {
   -o-transition: 300ms all linear;
 }
 
+.special-text:hover{
+  color: hotpink;
+}
+
 .wave_1 {
-  margin:0 px;
+  margin: 0;
   height: 12px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='24'%3E%3Cdefs%3E%3Cpattern id='bg' patternUnits='userSpaceOnUse' width='130' height='24'%3E%3Cpath fill='white' d='M0,12c32.5,0,32.5,12,65,12s32.5-12,65-12V0C97.5,0,92.9,12,65,12C32.5,12,20.7,0,0,0'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%' height='100%' fill='url(%23bg)'/%3E%3C/svg%3E");
-  background-size: 100% 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' fill='%23A93F55' height='24'%3E%3Cdefs%3E%3Cpattern id='bg' patternUnits='userSpaceOnUse' width='130' height='24'%3E%3Cpath d='M0,12c32.5,0,32.5,12,65,12s32.5-12,65-12V0C97.5,0,92.9,12,65,12C32.5,12,20.7,0,0,0'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%' height='100%' fill='url(%23bg)'/%3E%3C/svg%3E");
+  background-size: 100% 25px;
   background-repeat: no-repeat;
 }
 footer {
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background-color: #a21471;
 }
 
 .footer_left {
@@ -371,5 +383,100 @@ footer p {
 
 .social {
   display: flex;
+  gap: 20px;
   flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bigger-text {
+  font-size: 2rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
