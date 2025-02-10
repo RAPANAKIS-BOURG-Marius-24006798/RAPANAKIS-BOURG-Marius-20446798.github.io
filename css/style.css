@@ -29,12 +29,12 @@ body{
 }
 
 @font-face {
-  font-family:  aurora, cursive;
+  font-family:  aurora;
   src: url('../font/AURORA-PRO.ttf');
 }
 
 @font-face {
-  font-family:  basteleur, serif;
+  font-family:  basteleur;
   src: url(../font/Basteleur-Moonlight.ttf);
 }
 
@@ -271,6 +271,10 @@ textarea {
   width: 100%;
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#header {
+  padding-top: 50px;
 }
 
 .upper-div  p {
