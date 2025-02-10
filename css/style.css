@@ -29,12 +29,12 @@ body{
 }
 
 @font-face {
-  font-family:  aurora;
+  font-family:  aurora, cursive;
   src: url('../font/AURORA-PRO.ttf');
 }
 
 @font-face {
-  font-family:  basteleur;
+  font-family:  basteleur, serif;
   src: url(../font/Basteleur-Moonlight.ttf);
 }
 
@@ -336,6 +336,7 @@ hr {
 
 .about-div {
   background-color: #A93F55;
+  padding-bottom: 150px;
 }
 
 h2 {
@@ -343,7 +344,7 @@ h2 {
   color: #FBFBFB;
   font-size: 4rem;
   margin: 0;
-  padding: 50px;
+  padding: 20px 0 0 50px;
 }
 
 h3 {
@@ -357,7 +358,6 @@ h3 {
 p {
   font-family: basteleur, serif;
   color: #FBFBFB;
-  padding: 15px;
 }
 
 .special-text{
@@ -371,6 +371,30 @@ p {
 
 .special-text:hover{
   color: hotpink;
+}
+
+@keyframes rainbow {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+
+.special-text-bis {
+  transition: 15s;
+  animation: rainbow 15s linear infinite;
 }
 
 .wave_1 {
@@ -473,10 +497,17 @@ footer p {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+
+.text-about {
+  padding: 0 0 25px 50px;
+}
+
+.text-presentation {
+  padding-bottom: 100px;
 }
 
 /* Number text (1/3 etc) */
@@ -519,4 +550,25 @@ footer p {
 
 .work-img {
   height: 500px;
+}
+
+.passion-div {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.passion-div article {
+  background-color: #cc546d;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+}
+
+.passion-div h4 {
+  font-family: 'basteleur', serif;
+  color: #FBFBFB;
+  text-decoration: underline;
+  font-size: 1.3rem;
 }
