@@ -397,8 +397,8 @@ p {
 
 
 .special-text-bis {
-  transition: 15s;
-  animation: rainbow 15s linear infinite;
+  transition: 1s;
+  animation: rainbow 7s linear infinite;
 }
 
 .wave_1 {
@@ -568,6 +568,7 @@ footer p {
   background-color: #cc546d;
   padding: 0 20px 20px;
   border-radius: 10px;
+  border: 1px solid #FBFBFB;
 }
 
 .passion-div h4 {
@@ -575,4 +576,9 @@ footer p {
   color: #FBFBFB;
   text-decoration: underline;
   font-size: 1.3rem;
+}
+
+.top-passion-div {
+  display: flex;
+  flex-direction: row;
 }
