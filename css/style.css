@@ -409,7 +409,7 @@ p {
   background-repeat: no-repeat;
 }
 footer {
-  background-color: #a21471;
+  background-color: #cc546d;
 }
 
 .footer_left {
@@ -428,8 +428,6 @@ footer p {
   display: flex;
   gap: 20px;
   flex-direction: row;
-  margin-left: 10px;
-  margin-bottom: 10px;
 }
 
 .social img {
@@ -559,7 +557,7 @@ footer p {
 .passion-div {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 50px;
   justify-content: center;
   padding: 0 75px;
 }
@@ -569,7 +567,6 @@ footer p {
   padding: 0 20px 20px;
   border-radius: 10px;
   border: 1px solid #FBFBFB;
-  max-height: 600px;
 }
 
 .passion-div h4 {
@@ -581,8 +578,8 @@ footer p {
 .top-passion-div {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Align items vertically in the center */
-  gap: 10px; /* Add some space between the SVG and the title */
+  align-items: center;
+  gap: 10px;
 }
 
 .top-passion-div svg {
@@ -594,3 +591,48 @@ footer p {
   height: 30px;
   width: 30px;
 }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  }
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100px;
+  position: relative;
+  width: 200px;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 20px;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(250px * 14);
+}
+
+.slide img {
+  height: 70px;
+  width: 70px;
+}
+
