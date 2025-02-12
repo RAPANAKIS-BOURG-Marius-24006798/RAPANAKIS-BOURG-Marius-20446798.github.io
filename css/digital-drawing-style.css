@@ -1,0 +1,29 @@
+body{
+  background-image: linear-gradient(to left top, #fdd46d, #ffc181, #ffb49d, #ffaeb8, #eeaeca);
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.presentation-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.presentation-div img {
+  transition: transform 0.1s ease-in;
+  height: 300px;
+
+}
+
+
+.drawing.active {
+  transform: translateX(-50%) scale(1.4) ;
+  position: absolute;
+  z-index: 3;
+  top:50%;
+  left: 50%;
+}
+
+
