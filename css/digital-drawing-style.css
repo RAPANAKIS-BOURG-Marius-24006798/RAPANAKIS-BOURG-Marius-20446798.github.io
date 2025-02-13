@@ -12,18 +12,28 @@ body{
 }
 
 .presentation-div img {
-  transition: transform 0.1s ease-in;
+  transition: transform 0.1s ease-in-out   ;
   height: 300px;
 
 }
 
 
 .drawing.active {
-  transform: translateX(-50%) scale(1.4) ;
+  transform: translateX(-50%) scale(2) ;
   position: absolute;
   z-index: 3;
   top:50%;
   left: 50%;
+}
+
+.blur-background {
+  filter: blur(15px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.clear-image {
+  filter: none !important;
+  z-index:3;
 }
 
 
